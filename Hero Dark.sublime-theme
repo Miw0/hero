@@ -521,16 +521,16 @@
     {
         "class": "sidebar_tree",
         "row_padding": [10, 8],
-        "indent": 15,
-        "indent_offset": 15,
-        "indent_top_level": false
+        "indent": 20,
+        "indent_offset": 0,
+        "indent_top_level": true
     },
     // Sidebar rows
     {
         "class": "tree_row",
         "layer0.texture": "Theme - Hero/Hero Dark/sidebar-row.png",
         "layer0.opacity": 1.0,
-        "layer0.inner_margin": [2, 2, 2, 2]
+        "layer0.inner_margin": [1, 1]
     },
     // Sidebar row selected
     {
@@ -542,7 +542,7 @@
     // Sidebar heading
     {
         "class": "sidebar_heading",
-        "color": [247, 247, 247],
+        "color": [210, 210, 210],
         "font.bold": true,
         "shadow_color": [0, 0, 0],
         "shadow_offset": [0, 0]
@@ -551,23 +551,23 @@
     {
         "class": "sidebar_heading",
         "parents": [{"class": "tree_row", "attributes": ["selected"]}],
-        "color": [247, 247, 247],
+        "color": [210, 210, 210],
         "shadow_color": [0, 0, 0]
     },
     // Sidebar entry
     {
         "class": "sidebar_label",
-        "color": [255, 255, 255],
+        "color": [210, 210, 210],
         "shadow_color": [0, 0, 0],
         "shadow_offset": [0, 0],
         "font.bold": false,
         "font.italic": false
     },
- // Sidebar folder entry
+    // Sidebar folder entry
     {
         "class": "sidebar_label",
         "parents": [{"class": "tree_row", "attributes": ["expandable"]}],
-        "color": [133, 132, 174],
+        "color": [210, 210, 210],
         "font.bold": true
     },
     {
@@ -579,7 +579,7 @@
         "class": "sidebar_label",
         "parents": [{"class": "tree_row", "attributes": ["expandable"]}],
         "settings": ["bold_folder_labels"],
-        "color": [247, 247, 247],
+        "color": [210, 210, 210],
         "font.bold": true
     },
     {
@@ -595,7 +595,7 @@
         "color": [11, 175, 237],
         "shadow_color": [0, 0, 0],
         "shadow_offset": [0, 0],
-        "font.bold": true
+        "font.bold": false
     },
     // Sidebar entry transient
     {
@@ -659,7 +659,7 @@
     // Sidebar group closed
     {
         "class": "disclosure_button_control",
-        "content_margin": [8, 8],
+        "content_margin": [0, 0],
         "layer0.texture": "Theme - Hero/Hero Dark/group-closed.png",
         "layer0.opacity": 1.0,
         "layer0.inner_margin": 0
@@ -731,19 +731,63 @@
         "parents": [{"class": "tree_row", "attributes": ["selected"]}],
         "layer0.texture": "Theme - Hero/Hero Dark/folder-open-selected.png"
     },
-
-
+    // Sidebar file icons
     {
         "class": "icon_file_type",
-        "content_margin": [0,0]
+        "content_margin": [8, 8]
+    },
+    // Sidebar folder closed
+    {
+        "class": "icon_folder",
+        "content_margin": [8, 8],
+        "layer0.texture": "Theme - Hero/Hero Dark/group-closed.png"
     },
     {
         "class": "icon_folder",
-        "content_margin": [0,0]
+        "parents": [{"class": "tree_row", "attributes": ["hover"]}],
+        "layer0.texture": "Theme - Hero/Hero Dark/group-closed-hover.png"
+    },
+    {
+        "class": "icon_folder",
+        "parents": [{"class": "tree_row", "attributes": ["selected"]}],
+        "layer0.texture": "Theme - Hero/Hero Dark/group-closed-hover.png"
+    },
+    // Sidebar folder open
+    {
+        "class": "icon_folder",
+        "parents": [{"class": "tree_row", "attributes": ["expanded"]}],
+        "layer0.texture": "Theme - Hero/Hero Dark/group-open.png"
+    },
+    {
+        "class": "icon_folder",
+        "parents": [{"class": "tree_row", "attributes": ["expanded", "hover"]}],
+        "layer0.texture": "Theme - Hero/Hero Dark/group-open-hover.png"
+    },
+    {
+        "class": "icon_folder",
+        "parents": [{"class": "tree_row", "attributes": ["expanded", "selected"]}],
+        "layer0.texture": "Theme - Hero/Hero Dark/group-open-selected.png"
     },
     {
         "class": "icon_folder_loading",
-        "content_margin": [0,0]
+        "layer0.texture":
+        {
+            "keyframes":
+            [
+                "Theme - Hero/Hero Dark/spinner/spinner7.png",
+                "Theme - Hero/Hero Dark/spinner/spinner6.png",
+                "Theme - Hero/Hero Dark/spinner/spinner5.png",
+                "Theme - Hero/Hero Dark/spinner/spinner4.png",
+                "Theme - Hero/Hero Dark/spinner/spinner3.png",
+                "Theme - Hero/Hero Dark/spinner/spinner2.png",
+                "Theme - Hero/Hero Dark/spinner/spinner1.png",
+                "Theme - Hero/Hero Dark/spinner/spinner.png"
+            ],
+            "loop": true,
+            "frame_time": 0.075,
+        },
+        "layer0.opacity": 1.0,
+        "content_margin": [8, 8]
     },
 //
 // STANDARD TEXT BUTTONS
@@ -850,20 +894,20 @@
         "class": "quick_panel_label",
         "fg": [210, 210, 210, 210],
         "match_fg": [210, 210, 210, 210],
-        "selected_fg": [27, 26, 36, 255],
-        "selected_match_fg": [27, 26, 36, 255]
+        "selected_fg": [210, 210, 210, 210],
+        "selected_match_fg": [11, 175, 237]
     },
     {
         "class": "quick_panel_path_label",
         "fg": [133, 132, 174, 210],
-        "match_fg": [210, 210, 210, 210],
-        "selected_fg": [255, 255, 255, 255],
-        "selected_match_fg": [255, 255, 255, 255]
+        "match_fg": [195, 195, 255, 255],
+        "selected_fg": [133, 132, 174, 210],
+        "selected_match_fg": [195, 195, 255, 255]
     },
     {
         "class": "quick_panel_score_label",
         "fg": [210, 210, 210, 255],
-        "selected_fg": [27, 26, 36, 140]
+        "selected_fg": [210, 210, 210, 255]
     },
 
 //
