@@ -2,17 +2,6 @@
 
  Hero is a simple, beautiful flat theme for Sublime Text 3.
 
-## Design
-
-### Hero Dark
-![Hero Dark Theme](https://raw.github.com/nickbalestra/Hero/master/images/hero_dark.png)
-![Hero Dark Theme](https://raw.github.com/nickbalestra/Hero/master/images/hero_dark1.png)
-![Hero Dark Theme](https://raw.github.com/nickbalestra/Hero/master/images/hero_dark2.png)
-![Hero Dark Theme](https://raw.github.com/nickbalestra/Hero/master/images/hero_dark3.png)
-![Hero Dark Theme](https://raw.github.com/nickbalestra/Hero/master/images/hero_dark4.png)
-![Hero Dark Theme](https://raw.github.com/nickbalestra/Hero/master/images/hero_dark5.png)
-
-
 ## Installation
 
 Hero theme is designed to work with the latest development builds of Sublime Text: [Sublime Text 3](http://www.sublimetext.com/3dev).
