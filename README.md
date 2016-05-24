@@ -55,11 +55,3 @@ The theme support active guides, enable them on your preferences file.
         ],
 }
 ```
-
-Font used on the screenshot: Inconsolata
-
-
-### Files icons on sidebar
-
-hero support using file icons on the sidbar. [Info on how to add them](https://github.com/nickbalestra/hero/issues/1)
-
