@@ -3,20 +3,20 @@
 <plist version="1.0">
 <dict>
 	<key>name</key>
-	<string>Puppet</string>
+	<string>Gulpfile JS</string>
 	<key>fileTypes</key>
 	<array>
-		<string>pp</string>
-		<string>puppet.conf</string>
+		<string>gulpfile.js</string>
+		<string>gulpfile.babel.js</string>
 	</array>
 	<key>patterns</key>
 	<array>
 		<dict>
 			<key>include</key>
-			<string>source.css</string>
+			<string>source.js</string>
 		</dict>
 	</array>
 	<key>scopeName</key>
-	<string>source.css, source.puppet</string>
+	<string>source.js, source.gulpfile.js</string>
 </dict>
 </plist>

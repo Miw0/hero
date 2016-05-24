@@ -3,12 +3,20 @@
 <plist version="1.0">
 <dict>
 	<key>name</key>
-	<string>LICENSE</string>
+	<string>Puppet</string>
 	<key>fileTypes</key>
 	<array>
-		<string>LICENSE</string>
+		<string>pp</string>
+		<string>puppet.conf</string>
+	</array>
+	<key>patterns</key>
+	<array>
+		<dict>
+			<key>include</key>
+			<string>source.pp</string>
+		</dict>
 	</array>
 	<key>scopeName</key>
-	<string>license</string>
+	<string>source.css, source.puppet</string>
 </dict>
 </plist>
